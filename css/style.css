@@ -1,0 +1,479 @@
+:root {
+    --color-primary: #F2F2F2;
+    --color-grey: #454545;
+    --color-black-light: #181818;
+    --color-grey-light-1: #f0eeee;
+    --color-grey-light-2: #ccc;
+
+    --shadow-dark: 0 2rem 6rem rgba(0,0,0,.3);
+    --shadow-light: 0 2rem 5rem rgba(0,0,0,.06);
+    --line: 1px solid var(--color-grey-light-2); 
+}
+  
+* {
+    margin: 0;
+    padding: 0;
+ }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit; 
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; 
+}
+
+body {
+    font-family: 'Roboto', sans-serif ;
+    font-weight: 400;
+    line-height: 1.6;
+    color: var(--color-black-light);
+    overflow-x: hidden;
+ }
+
+/*****************************************************************/
+ /*****************
+ font-family: 'Great Vibes', 🤪
+ /***************************************************************/
+
+
+ header {
+    background-color:var(--color-primary);
+    background-image: url(/img/1.jpg);
+    background-size: cover;   
+    background-repeat: no-repeat;
+    min-height: 100vh;
+
+    background-attachment: fixed;
+}
+
+.container {
+    display:flex;
+
+}
+
+.search,
+.search-icon ,
+.nav-link {
+    display:flex;
+}
+
+.nav-links { /* nav to the left */
+    flex: 1;
+    justify-content: space-around;
+    list-style: none;
+    cursor: pointer;
+    margin-left: 30px;
+}
+
+.nav-link {
+	color: #000;
+
+    text-decoration:none;
+    text-transform: uppercase;
+    margin: 10px;
+ 
+}
+
+.logo {
+    width: 140px;
+    height: 100px;
+    margin-top: 50px;
+    margin-left: 20px;
+}
+
+
+.nav-users {
+    flex: 1;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+
+.nav-links li {
+	justify-content: space-around;
+    list-style: none;
+    font-size: 1.2rem;
+	letter-spacing: 2px;
+    font-weight: 300;
+    color: #000;
+    cursor: pointer;
+}
+
+
+
+.nav-links li:hover {
+	justify-content: space-around;
+    list-style: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+	letter-spacing: 2px;
+	font-weight: 500;
+}
+.nav-user {
+    display:flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin: 10px 30px 0 0  ;
+    cursor: pointer;    
+}
+
+.search {
+flex: 0 0 10%;
+
+display:flex;
+align-items: center;
+justify-content:center;
+}
+
+.search:focus {
+    outline:none;
+
+}
+
+.search-input {
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background-color: var(--color-primary);
+    border-color: #181818;
+    border-style: solid;
+    border-width: 0 0  1px 0;
+    padding: 5px 2px;
+    border: radius 100px;
+    width: 15rem;
+    margin-bottom: 10px;
+
+}
+
+.search-input:focus {
+    outline:none;
+}
+
+
+.search-button {
+    border: none;
+    background-color: var(--color-primary);
+   
+}
+
+.search-button:focus {
+    outline:none;
+}
+
+.search-icon{
+    width: 20px;
+    height: 20px;
+    margin: 10px;
+    fill: var(--color-black-light);
+    cursor: pointer;
+}
+
+.title-wrap {
+    flex: 1;
+    display:flex;
+    
+
+    justify-content: center;
+    align-items: flex-end;
+    margin: 90vh 0 0 0  ;
+    cursor: pointer;
+
+}
+
+.title {
+    font-weight: 500;
+    font-family: sans-serif;
+    font-size: 19px;
+    letter-spacing: 2px;
+    color: #000;
+    text-transform: uppercase;
+}
+
+
+/******************************** STICKY NAV-2 👇*******************************/
+
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    z-index: 9999;
+
+}
+
+.sticky .nav-link {
+	color: #fff; 
+}
+
+.sticky .search-icon{
+
+    fill: var(--color-primary);
+
+}
+
+.sticky .search-input {
+    background-color: var(--color-primary);
+    border-color: #ffffff;
+}
+
+.sticky .search-button {
+    border: none;
+    background-color: var(--color-black);
+   
+}
+
+.sticky .title-wrap { display: none}
+
+
+/******************************** SESSION-2 👇*******************************/ 
+
+a {
+    list-style: none;
+    text-decoration: none;
+}
+
+.urban {
+    background-color: var(--color-primary);
+    background-image: url(/img/2.jpg);
+    min-height: 95vh;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: local;
+    
+    display: grid;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: repeat(6, 1fr);
+    align-items: center;
+
+}
+
+.title-wrap-2,
+.title-wrap-3,
+.title-wrap-4 {
+ 
+    display:flex;
+    flex-direction: row ;
+
+    justify-content: center;
+    align-items: flex-end;
+    margin: 75vh 0 0 0  ;
+    cursor: pointer;
+}
+
+
+.title-2,
+.title-3,
+.title-4 {
+    padding: 20px;
+
+    font-weight: 500;
+    font-family: sans-serif;
+    font-size: 15px;
+    letter-spacing: 2px;
+    color: #000;
+    text-transform: uppercase;
+
+}
+
+.subtitle ,
+.subtitle-2{
+    padding: 5px;
+
+    font-weight: 300;
+    font-family: sans-serif;
+    font-size: 10px;
+    letter-spacing: .5px;
+    color: #000;
+    text-transform: uppercase;
+    box-shadow: var(--shadow-light);
+
+}
+
+/******************************** INTER-SESSION-2/3 👇*******************************/ 
+/******************************** SHARING COMMON STUFFS******************************/ 
+.image-2,
+.image-3 {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 50%;
+    width: 100%;
+    grid-row: 2 / span 4 ;
+    grid-column: 3 / span 2;
+    min-height: 75vh;
+
+    z-index: 10000;
+}   
+
+/******************************** SESSION-3 👇*******************************/ 
+
+.factor {
+    background-color: var(--color-primary);
+    background-image: url(/img/7.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+    display: grid;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: repeat(6, 1fr);
+    align-items: center;
+
+
+}
+
+.image-4,
+.image-3 {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+.title-3,
+.title-4 {
+   
+    padding: 20px;
+
+    font-weight: 400;
+    font-family: sans-serif;
+    font-size: 16px;
+    letter-spacing: 2px;
+    color: #fff;
+    text-transform: uppercase;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.subtitle-2 {
+   
+    display:flex;
+    flex-direction: row ;
+
+    justify-content: center;
+    align-items: flex-end;
+
+
+    font-weight: 300;
+    font-family: sans-serif;
+    font-size: 10px;
+    letter-spacing: .5px;
+    color: #fff;
+    text-transform: uppercase;
+    box-shadow: var(--shadow-light);
+    cursor: pointer;
+    padding: 5px;
+}
+/******************************** SESSION-4 👇*******************************/ 
+
+
+.store {
+    background-color: var(--color-primary);
+    background-image: url(/img/12.jpg);
+    height: 100vh;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+
+
+    display: grid;
+
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: repeat(6, 1fr);
+    align-items: center;
+
+
+}
+
+
+/******************************** FOOTER👇*******************************/ 
+
+footer {
+    background-color: var(--color-primary);
+    width: 100vw;
+    display:flex;
+    justify-content:space-around;
+    align-items: center;
+    margin: auto;
+   
+}
+
+.copy,
+.footer-links,
+.footer-icons,
+.footer-nav-icons {
+    display: flex;
+}
+
+.footer-nav {
+    flex: 1;
+    justify-content: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+.footer-links {
+    flex: 2;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+    
+
+    justify-content: space-around;
+ 
+    
+  
+    margin: 0;
+}
+
+.footer-link {
+    font-size: 10px;
+    letter-spacing: .5px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000;
+    font-weight: 300;
+    font-family: sans-serif;
+
+    align-items: center;
+
+}
+
+
+.footer-icons {
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    justify-content: flex-start;
+    cursor: pointer;
+}
+
+.copy {
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+    font-weight: 200;
+    font-family: sans-serif;
+    color: rgb(32, 31, 31);
+    font-size: 1px;
+    letter-spacing: .5px;
+
+ 
+}
+
