@@ -41,7 +41,7 @@ body {
 
 
  header {
-    background-color:var(--color-primary);
+    background-color:inherit;
     background-image: url;
     background-size: cover;   
     background-repeat: no-repeat;
@@ -71,17 +71,25 @@ body {
 
 .nav-link {
 	color: #000;
-	font-size: 12px;
-	letter-spacing: 2px;
-	font-weight: 300;
+	font-size: 1.4rem;
+	letter-spacing: 1px;
+	font-weight: 400;
     text-decoration:none;
     text-transform: uppercase;
     margin: 10px;
+    z-index: 9999;
+    transition: all .2s;
  
 }
+.nav-link:hover,
+.nav-link:active {
+    color: rgb(255, 255, 255);
+    transform: scale(1.01);
 
-.logo {
-    width: 140px;
+}
+
+#logo {
+    width: 144px;
     height: 100px;
     margin-top: 50px;
     margin-left: 20px;
@@ -167,7 +175,7 @@ justify-content:center;
 .title-wrap {
     display:flex;
     flex-direction: column;
-
+    flex: 1;
     justify-content: center;
     align-items: center;
     margin: 12rem 0 0 0  ;
@@ -251,7 +259,63 @@ justify-content:center;
 
 .sticky .title-wrap { display: none}
 /******************************** 👇GRID_CONTAINER👇*******************************/ 
+.grid-container {
+    background-color: inherit; 
+    height: auto;
+    width: 75vw;
+    margin : 0 auto;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-wrap: wrap; 
+ 
+}
 
+.gallery__item {
+    width: 40rem;
+    height: 50rem;
+    cursor: pointer;
+}
+
+.gallery__img{
+    width: 40rem;
+    height: 50rem;
+    padding: 4rem 2rem;
+    display: flex;
+}
+
+.item-price{
+    display: flex;
+
+    justify-content:space-between;
+    align-items: center; 
+    flex-direction: row;
+    padding: 0 4rem;
+    
+}
+.price-small {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: rgb(68, 66, 66);
+}
+
+
+
+
+.item-name {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 1.3rem;
+    color: rgb(68, 66, 66);
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-decoration: uppercase;
+    padding: 6px;
+} 
+
+
+
+/*
+@media screen and (min-width:768px) {
 .grid-container {
     background-color:var(--color-primary);
     min-height: 100vh;    
@@ -261,7 +325,7 @@ justify-content:center;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows:  repeat(5, 600px) ;
     cursor: pointer ;
-}
+}}
 .gallery__img {
    
     width: 100%;
@@ -356,6 +420,9 @@ justify-content:center;
     grid-row: 5;
 }
 
+*/
+
+
 
 
 /******************************** FOOTER👇*******************************/ 
@@ -363,7 +430,7 @@ justify-content:center;
 footer {
     background-color:var(--color-primary);
     width: 100vw;
-    height: 15vh;
+    height: 10vh;
     display:flex;
     justify-content:space-around;
     align-items: center;

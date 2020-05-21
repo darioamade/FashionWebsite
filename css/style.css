@@ -71,14 +71,25 @@ body {
 
 .nav-link {
 	color: #000;
-
+	font-size: 1.4rem;
+	letter-spacing: 1px;
+	font-weight: 400;
     text-decoration:none;
     text-transform: uppercase;
     margin: 10px;
+    z-index: 9999;
+    transition: all .2s;
  
 }
+.nav-link:hover,
+.nav-link:active {
+    color: rgb(255, 255, 255);
+    transform: scale(1.01);
 
-.logo {
+}
+
+
+#logo {
     width: 140px;
     height: 100px;
     margin-top: 50px;
@@ -207,7 +218,7 @@ justify-content:center;
 }
 
 .sticky .nav-link {
-	color: #fff; 
+	color: rgb(9, 9, 9); 
 }
 
 .sticky .search-icon{

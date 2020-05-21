@@ -89,7 +89,7 @@ body {
 .nav-link:hover,
 .nav-link:active {
     color: rgb(255, 255, 255);
-    transform: scale(1.05);
+    transform: scale(1.01);
 
 }
 
@@ -136,7 +136,7 @@ body {
 
 
 
-.logo {
+#logo {
     width: 14rem;
     height: 100px;
     margin-top: 50px;
@@ -386,18 +386,20 @@ a{
 
 
 /******************************** POPUP 👇*******************************/ 
-
-.popup {
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: rgba(14, 13, 13, .8);
-    z-index: 1000;
-    opacity: 0;
-    visibility: hidden;
+@media  screen and (max-width: 2000px) {
+    .popup {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: rgba(14, 13, 13, .8);
+        z-index: 1000;
+        opacity: 0;
+        visibility: hidden;
+    }
 }
+
 
 .popup:target {
     opacity: 1;
