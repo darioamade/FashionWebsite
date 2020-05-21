@@ -89,7 +89,7 @@ body {
 }
 
 
-#logo {
+.logo {
     width: 140px;
     height: 100px;
     margin-top: 50px;
@@ -186,7 +186,6 @@ justify-content:center;
 .title-wrap {
     flex: 1;
     display:flex;
-    
 
     justify-content: center;
     align-items: flex-end;
